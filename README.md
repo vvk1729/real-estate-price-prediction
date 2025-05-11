@@ -37,6 +37,8 @@ A machine learning web application built with **Flask** that predicts house pric
 ├── columns.json # Metadata for features
 ├── requirements.txt # Python dependencies
 └── README.md
+
+
 Install dependencies:
 pip install -r requirements.txt
 
