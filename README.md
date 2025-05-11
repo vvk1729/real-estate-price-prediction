@@ -24,4 +24,25 @@ A machine learning web application built with **Flask** that predicts house pric
 ---
 
 ## 📁 Project Structure
+├── app.py # Main Flask backend
+├── templates/
+│ └── app.html # Frontend HTML page
+├── static/
+│ ├── css/
+│ │ └── app.css # CSS for styling
+│ └── js/
+│ └── app.js # JavaScript for interactivity
+│ ── banglore_home_prices_model.pickle # Trained ML model
+├── real_estate_model.ipynb # Notebook for model training
+├── columns.json # Metadata for features
+├── requirements.txt # Python dependencies
+└── README.md
+Install dependencies:
+pip install -r requirements.txt
 
+
+Run the Flask app:
+python app.py
+
+Open in browser:
+http://127.0.0.1:5000
