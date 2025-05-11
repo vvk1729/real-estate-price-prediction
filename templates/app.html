@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Price Prediction</title>
+    <link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Real Estate Price Predictor</h1>
+           
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h2>Predict the Price of Your Property</h2>
+            <p>Fill in the details below to get an estimated price based on our AI model.</p>
+        </div>
+    </header>
+
+    <section class="form-section">
+        <div class="container">
+            <form id="priceForm">
+                <label for="uiLocations">Location</label>
+                <select id="uiLocations" required>
+                    <option value="" disabled selected>Select a location</option>
+                </select>
+
+                <label for="uiSqft">Total Square Feet</label>
+                <input type="number" id="uiSqft" placeholder="Enter total square feet" required>
+
+                <label for="uiBHK">BHK (Bedrooms)</label>
+                <input type="number" id="uiBHK" placeholder="Enter number of bedrooms" required>
+
+                <label for="uiBathrooms">Bathrooms</label>
+                <input type="number" id="uiBathrooms" placeholder="Enter number of bathrooms" required>
+
+                <button type="button" onclick="onClickedEstimatePrice()">Predict Price</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="result-section">
+        <div class="container">
+            <h3>Estimated Price:</h3>
+            <div id="uiEstimatedPrice"></div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/js/app.js"></script>
+	<section class="result-section">
+		<div class="container">
+			<div class="contact-info">
+				<p><strong>Contact:</strong> V. Varun Kumar</p>
+				<p><strong>Phone:</strong> +91 7780340845</p>
+			</div>
+		</div>
+	</section>
+	
+	
+</body>
+</html>
